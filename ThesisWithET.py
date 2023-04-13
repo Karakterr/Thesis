@@ -64,235 +64,24 @@ txt_col = 'black'
 wwid = 1.3
 ht = 0.06
 
-# initialize the task Instructions
-#TaskInstructionsStartEnglish = ("In this experiment you will make two different tasks. A color naming task and a dot motion task.\n" +
-#                                "The exact instructions for each task will be explained later.\n\n" +
-#                                "Each block only consists of one type of task and\n" +
-#                                "it will be clearly indicated when a block is over and\n" +
-#                                "what task type the next block will be.\n\n" +
-#                                "In this experiment you can also earn extra money by giving the correct answer in the trials." +
-#                                "Some trials will give a higher reward then others, this will also be explained later on."
-#                                "First we will explain and practice these two tasks.\n\n" +
-#                                "Press the space bar to continue.")
-
-TaskInstructionsStart = (   "In dit experiment zal je te maken krijgen met twee verschillende taken.\n" +
-                            "Een taak waarin je kleuren zal moeten benoemen en een taak waarin je de richting van " +
-                            "bewegende stippen moet aangeven.\n" +
-                            "De exacte instructies voor elke taak volgen later.\n\n" +
-                            "Dit experiment is opgedeeld in blokken. Elk blok bevat slechts één soort taak.\n" +
-                            "Het zal steeds duidelijk aangegeven worden wanneer een blok eindigt en het welke taak gemaakt " +
-                            "zal moeten worden in het voldende blok.\n\n" +
-                            "Je kan in dit experiment ook extra geld verdienen door trials juist te beantwoorden." +
-                            "Sommige trials zullen meer opbrengen dan andere, info hier over volgt ook later.\n\n" +
-                            "Eerst zullen we de instructies voor deze taken meegeven en deze taken oefenen.\n\n" +
-                            "Druk op de spatiebalk om verder te gaan.")                        
-
-#StroopInstructionsEnglish = (   "These are the instructions for the color naming Task.\n\n" +
-#                                "In this task you will see color words (“red”, “blue”, “green” and “yellow”)\n" +
-#                                "presented in a random ink color (red, blue, green and yellow color).\n\n" +
-#                                "You have to respond to the ink color of the word and\n" +
-#                                "ignore the word meaning of the stimulus.\n\n" +
-#                                "You can use the following four response buttons (from left to right;\n" +
-#                                "use the index and middle finger of your left and right hand):" +
-#                                "“d”,“f”,“j” and “k”.\n\n" +
-#                                "If the word has a red color, press the leftmost button “d”.\n" +
-#                                "For a blue color, press “f”.\n" +
-#                                "For a green color, press “j”.\n" +
-#                                "For a yellow color, press “k”.\n\n" +
-#                                "Answer as quickly as possible, but also try to avoid mistakes.\n" +
-#                                "By all means ignore the word meaning, you should only respond to the ink color.\n\n" +
-#                                "Any questions?\n\nPress the space bar to continue.")
-
-StroopInstructions = (  "Dit zijn de instructies voor de kleur benoeming taak.\n\n" +
-                        "In deze taak krijg je kleurwoorden te zien (“rood”, “blauw”, “groen” en “geel”).\n" +
-                        "Deze worden gepresenteerd in een willekeurige inkt kleur (een rode, blauwe, groene of gele kleur).\n\n" +
-                        "Het is jouw taak om te reageren op de inktkleur van het woord en " +
-                        "de betekenins van het woord te negeren.\n\n" +
-                        "Je kan de volgende vier toetsen gebruiken om te antwoorden (van links naar rechts; " +
-                        "gebruik de wijs en middelvinger van elk hand):“d”,“f”,“j” en “k”.\n\n" +
-                        "Indien het woorde een rode kleur heeft, druk dan op de meest linkse toets “d”.\n" +
-                        "Voor een blauwe kleur druk “f”.\n" +
-                        "Voor een groene kleur, druk “j”.\n" +
-                        "Voor een gele kleur, druk “k”.\n\n" +
-                        "Antwoord zo snel mogelijk maar probeer ook het maken van fouten te vermijden.\n" + ### DO I TELL THEM ABOUT MAX TIME?
-                        "Nogmaals, probeer de betekenis van het woord te negeren en reageer alleen op de inkt kleur.\n\n" +
-                        "Indien iets niet duidelijk is kan je je nu richten tot de experimentator.\n\n" +
-                        "Druk op de spatiebalk om verder te gaan.")
-
-#StroopTrainingInstructionsEnglish = (   "First we will practice the color naming Task.\n\n" +
-#                                        "You will do 10 practice trials until you have an 80% accuracy.\n\n" +
-#                                        "Press the space bar to continue.")
-
-StroopTrainingInstructions = (  "Eerst gaan we de kleur benoemingstaak oefenen.\n\n" +
-                                "Je zal tien oefen trials maken tot je een accuraatheid van 80% of meer behaald.\n\n" +
-                                "Druk op de spatiebalk om verder te gaan.")
-
-#StroopTrainingCorrectEnglish = ("Correct!\n\n" + "Press the space bar to continue.")
-
-StroopTrainingCorrect = ("Correct!\n\n" + "Druk op de spatiebalk om verder te gaan.")
-
-#StroopTrainingIncorrectEnglish = ("Incorrect!\n\n" + "Press the space bar to continue.")
-
-StroopTrainingIncorrect = ("Incorrect!\n\n" + "Druk op de spatiebalk om verder te gaan.")
-
-#StroopTrainingCompleteEnglish = (   "You completed the trainning and can continue the experiment\n\n" + 
-#                                    "Press the space bar to continue.")
-
-StroopTrainingComplete = (  "Je hebt de training voltooid en kan verder gaan met het experiment.\n\n" +
-                            "Druk op de spatiebalk om verder te gaan.")
-
-#StroopTrainingIncompleteEnglish = ("You were incorrect to many times and have to take the trainning again\n\n" + 
-#                                   "Press the space bar to continue.")
-
-StroopTrainingIncomplete = ("Je maakte te veel fouten en moet de training herdoen.\n\n" + 
-                            "Druk op de spatiebalk om verder te gaan.")
-
-#RDKInstructionsEnglish = (  "These are the instructions for the dot motion Task.\n\n" +
-#                            "In this task you will see a number of dots moving across the screen.\n\n" +
-#                            "These dots will be white and a random color (red, blue, green and yellow color).\n\n" +
-#                            "You have to respond to the direction of the white dots and \n" +
-#                            "ignore the direction of the collered dots.\n\n" + 
-#                            "You can use the following four response buttons (from left to right;\n" + 
-#                            "use the index and middle finger of your left and right hand):" + 
-#                            "“d”,“f”,“j” and “k”.\n\n" + 
-#                            "If the direction of the white dots is left, press the leftmost button “d”.\n" + 
-#                            "If it’s up, press “f”.\n" +
-#                            "If it’s down, press “j”.\n" +
-#                            "If it’s right, press “k”.\n\n" +
-#                            "Answer as quickly as possible, but also try to avoid mistakes.\n\n" +
-#                            "Any questions?\n\nPress the space bar to continue.")
-
-RDKInstructions = ( "Dit zijn de instructies voor de taak met bewegende stippen.\n\n" +  ### BETTER NAME?
-                    "In deze taak zal je een aantal stippen over het scherm zien bewegen. \n" +
-                    "Deze stippen zullen een witte en een andere willekeurige kleur hebben (rood, blauw, groen of geel).\n\n" +
-                    "Jouw taak is om te reageren op de richting van de witte stippen en " +
-                    "de richting van de gekleurde stippen te negeren.\n\n" + 
-                    "Je kan de volgende vier toetsen gebruiken om te antwoorden (van links naar rechts; " +
-                    "gebruik de wijs en middelvinger van elk hand):“d”,“f”,“j” en “k”.\n\n" +
-                    "Indien de witte stippen naar links bewegen, druk dan op de meest linkse knop “d”.\n" + 
-                    "Indien ze naar boven bewegen, druk “f”.\n" +
-                    "Indien ze naar onder bewegen, druk “j”.\n" +
-                    "Indien ze naar rechts bewegen, druk “k”.\n\n" +  
-                    "Antwoord zo snel mogelijk maar probeer ook het maken van fouten te vermijden.\n" + ### DO I TELL THEM ABOUT MAX TIME?
-                    "Indien iets niet duidelijk is kan je je nu richten tot de experimentator.\n\n" +
-                    "Druk op de spatiebalk om verder te gaan.")
-
-#RDKTrainingInstructionsEnglish = (  "Now we will practice the dot motion Task.\n\n" +
-#                                    "You will do 10 practice trials until you have an 80% accuracy.\n\n" +
-#                                    "Press the space bar to continue.")
-
-RDKTrainingInstructions = ( "Nu gaan we de taak met de bewgende stippen oefenen.\n\n" +
-                            "Je zal tien oefen trials maken tot je een accuraatheid van 80% of meer behaald.\n\n" +
-                            "Druk op de spatiebalk om verder te gaan.")
-
-#RDKTrainingCorrectEnglish = ("Correct!\n\n" + "Press the space bar to continue.")
-
-RDKTrainingCorrect = ("Correct!\n\n" + "Druk op de spatiebalk om verder te gaan.")
-
-#RDKTrainingIncorrectEnglish = ("Incorrect!\n\n" + "Press the space bar to continue.")
-
-RDKTrainingIncorrect = ("Incorrect!\n\n" + "Druk op de spatiebalk om verder te gaan.")
-
-#RDKTrainingCompleteEnglish = (  "You completed the trainning and can continue the experiment.\n\n" + 
-#                                "Press the space bar to continue.")
-
-RDKTrainingComplete = ( "Je hebt de training voltooid en kan verder gaan met het experiment\n\n" +
-                        "Druk op de spatiebalk om verder te gaan.")
-
-#RDKTrainingIncompleteEnglish = ("You were incorrect to many times and have to take the trainning again\n\n" + 
-#                                "Press the space bar to continue.")
-
-RDKTrainingIncomplete = (   "Je maakte te veel fouten en moet de training herdoen.\n\n" + 
-                            "Druk op de spatiebalk om verder te gaan.")
-
-#CueInstructionsEnglishStart = ( "Before each trial in the experiment you will see on of four possible cues.\n\n" +
-#                                "The cue is a thermometer. And it can either indicate a high or low temperature. " +
-#                                "The high temperature means that the following trial will be hard and require you to think more. " +
-#                                "A low temperature means the next trial will be easy.\n\n" +
-#                                "The cue can aslo have an orange or a purple color. " +
-#                                "The orange color means that the reward for succesfully completing the next trial is high. " +
-#                                "The purple color means that the reward will be low.\n\n" +
-#                                "On the next four pages you will be presented with the cues and their meaning so that you can learn them.\n\n" + 
-#                                "Press the right arrow to continue and the left arrow key to go back.")
-
-CueInstructionsStart = (    "Voor elke trial in dit experiment zal je één van de vier mogelijke aanwijzingen te zien krijgen.\n\n" +
-                            "De aanwijzing is een thermometer. Deze kan ofwel een hoge ofwel een lage temperatuur aanwijzen. " +
-                            "De hoge temperatuur betekent dat de volgende trial moeilijk zal zijn en dat je hierbij harder zal moeten nadenken. " +
-                            "De lage temperatuur betekent dat de volgende trial makkelijk zal zijn.\n\n" +
-                            "De thermometer heeft ook een oranje of paarse kleur. " +
-                            "De oranje kleur betekent dat de beloning voor het correct beantwoorden van de trial hoog is. " +
-                            "De paarse kleur betekent dat de beloning laag zal zijn.\n\n" +
-                            "Op de volgende vier pagina's zal je de aanwijzigen en hun betekenissen te zien krijgen zodat je ze kan leren.\n\n" +
-                            "Druk op de rechter pijl toets om verder te gaan en de linker pijl toets op terug te keren.")
-
-#CueInstructionsEnglishHighDHighR =  ("This cue means that the following trial will be \"hard\" and the reward for completing it will be high." )
-#CueInstructionsEnglishHighDLowR =   ("This cue means that the following trial will be \"hard\" and the reward for completing it will be low." )
-#CueInstructionsEnglishLowDHighR =   ("This cue means that the following trial will be \"easy\" and the reward for completing it will be high." )
-#CueInstructionsEnglishLowDLowR =    ("This cue means that the following trial will be \"easy\" and the reward for completing it will be low." )
-
-CueInstructionsHighDHighR =  ("Deze aanwijzing betekent dat de volgende trial \"moeilijk\" en de beloning voor een juist antwoord hoog zal zijn." )
-CueInstructionsHighDLowR =   ("Deze aanwijzing betekent dat de volgende trial \"moeilijk\" en de beloning voor een juist antwoord laag zal zijn." )
-CueInstructionsLowDHighR =   ("Deze aanwijzing betekent dat de volgende trial \"makkelijk\" en de beloning voor een juist antwoord hoog zal zijn." )
-CueInstructionsLowDLowR =    ("Deze aanwijzing betekent dat de volgende trial \"makkelijk\" en de beloning voor een juist antwoord laag zal zijn." )
-
-#CueInstructionsEnglishEnd = (   "We will now practice these cues to make sure you understand them.\n\n" +
-#                                "This is the last time you can go back to look at the cues again by using the left arrow key to go back.\n\n" + 
-#                                "If you press the right arrow key one more time the practice trials will start.")
-
-CueInstructionsEnd = (  "Nu gaan we de betekennis van deze aanwijzingen oefenen zodat je ze zeker begrijpt.\n\n" +
-                        "Dit is je laatste mogelijkheid om terug te keren en nogmaals naar de aanwijzigen te kijken " +
-                        "door middel van de linker pijl toets.\n\n" +
-                        "Indien je op rechter pijl toets drukt beginnen we met het oefenen.")
-
-#CuePracticeEnglish = (  "What is the meaning of this cue? \n\n" +
-#                        "Press \"1\" if you think this cue means that the following trial will be \"hard\" and the reward for completing it will be high.\n" +
-#                        "Press \"2\" if you think this cue means that the following trial will be \"hard\" and the reward for completing it will be low.\n" +
-#                        "Press \"3\" if you think this cue means that the following trial will be \"easy\" and the reward for completing it will be high.\n" +
-#                        "Press \"4\" if you think this cue means that the following trial will be \"easy\" and the reward for completing it will be low.\n")
-
 CuePractice = ( "Gebruik de toetsen \"1\", \"2\", \"3\" en \"4\"" + "Wat is de betekennis van deze aanwijzing? \n\n" +
                 "1) Moeilijke trial + hoge beloning.\n" + 
                 "2) Moeilijke trial + lage beloning.\n" +
                 "3) Makkelijke trial + hoge beloning.\n" +
                 "4) Makkelijke trial + lage beloning.\n")
 
-CueTrainingCorrect = ("Correct!\n\n" + "Druk op de spatiebalk om verder te gaan.")
-
-#CueTrainingIncorrectEnglish = ("Incorrect!\n\n" + "Press the space bar to continue.")
-
-CueTrainingIncorrect = ("Incorrect!\n\n" + "Druk op de spatiebalk om verder te gaan.")
-
-#CueTrainingCompleteEnglish = (  "You completed the trainning and can continue the experiment.\n\n" + 
-#                                "Press the space bar to continue.")
-
-CueTrainingComplete = ( "Je hebt de training voltooid en kan verder gaan met het experiment\n\n" +
-                        "Druk op de spatiebalk om verder te gaan.")
-
-#CueTrainingIncompleteEnglish = ("You were incorrect to many times and have to take the trainning again\n\n" + 
-#                                "Press the space bar to continue.")
-
-CueTrainingIncomplete = (   "Je maakte te veel fouten en moet de training herdoen.\n\n" + 
-                            "Druk op de spatiebalk om verder te gaan.")
-
-#BreakTextStroopEnglish = (  "This was the end of this Block\n\n" +
-#                            "You can take a small break if you want\n\n" +
-#                            "The next block will be a RDK block\n\n" + 
-#                            "Press the space bar to continue.")
-
 BreakTextStroop = ( "Dit was het einde van dit blok.\n\n" +
                     "Indien je wenst kan je nu een kleine pauze nemen.\n\n" +
                     "Het volgende blok bevat de taak met de bewegende stippen. \n\n" +
-                    "Druk op de spatiebalk om verder te gaan.")
-
-#BreakTextRDKEnglish = ( "This was the end of this Block\n\n" +
-#                        "You can take a small break if you want\n\n" +
-#                        "The next block will be a Stroop block\n\n" +
-#                        "Press the space bar to continue.")
+                    "Druk op 'rechts' om verder te gaan.")
 
 BreakTextRDK = ("Dit was het einde van dit blok.\n\n" +
                 "Indien je wenst kan je nu een kleine pauze nemen.\n\n" +
                 "Het volgende blok bevat de taak met het benoemen van de kleuren. \n\n" +
-                "Druk op de spatiebalk om verder te gaan.")
+                "Druk op 'rechts' om verder te gaan.")
+
+goodbyeText =   ("Bedankt voor je deelname! \n\n" + 
+                "Breng de experimentator op de hoogte dat je klaar bent alsjeblieft.")
 
 # creating list of numbers from 1 to 40 to create conditions later
 randomList=range(1,41)
@@ -364,7 +153,7 @@ if ET:
         return msg_out
 
 # initialize the window
-win = visual.Window(size = [500,500], units = 'norm', fullscr = True)
+win = visual.Window(size = [500,500], units = 'norm', fullscr = True, color = 'darkgrey')
 
 ##Initializing stuff to allow the storing of data
 # retrieve the participant info
@@ -418,7 +207,7 @@ thermometerCue  = visual.ImageStim(win, image = "HighDHighR.png")
 # for Stroop
 StroopStim     = visual.TextStim(win, text = "red", color = "blue")
 # and for RDK
-dotPatchTarget = visual.DotStim(win, color=(1, 1, 1), dir=0 ,
+dotPatchTarget = visual.DotStim(win, color= 'dimgrey', dir=0 ,
     nDots=50, fieldShape='circle', fieldPos=(0.0, 0.0), fieldSize=1,
     dotSize = 7.5,
     dotLife=-1,  # number of frames for each dot to be drawn
@@ -478,13 +267,35 @@ def showCueAndText(message_text = "", response_keys = ["left", "right"], height 
     # clear the keyboard input
     event.clearEvents(eventType = "keyboard")
     
-    #drawing and flipping
+    #drawing and flippinh
     if image == "None":
         cueInstructionsMessage.draw()
     elif image != "None":
         cueInstructionsMessage.draw()
         cueInstructionsImage.draw()
 
+    win.flip()
+    
+    #register the keys
+    keys = event.waitKeys(keyList = response_keys)
+
+    #prepare return
+    cueInstructionsRespons = keys[0]
+    
+    return(cueInstructionsRespons)
+
+# make a function to display intstructions
+def instruct(image = "", response_keys = ["left", "right"], height = 2, width = 2):
+    
+    cueInstructionsImage.image  = image
+    cueInstructionsImage.height  = height
+    cueInstructionsImage.width  = width
+    
+    # clear the keyboard input
+    event.clearEvents(eventType = "keyboard")
+    
+    #drawing and flipping
+    cueInstructionsImage.draw()
     win.flip()
     
     #register the keys
@@ -1096,7 +907,7 @@ def determine_reward(bDR, iDR):
 
     numberSD = (bDR * nTrials) + iDR
     
-    global rewardCounter
+    global thisTrialReward
     
     # if function to possibly increase reward counter
     if trials[numberSD, 9] == "1":
@@ -1104,12 +915,12 @@ def determine_reward(bDR, iDR):
             possibleReward = 0.9
         elif trials[numberSD, 6] == "Low":
             possibleReward = 0.05
-        
-        rewardCounter = round(rewardCounter + possibleReward, 2)
-        
-        #rewardCounter = rewardCounter.round(2)
+    else:
+        possibleReward = 0
+    
+    thisTrialReward = round(possibleReward, 2)
 
-    trials[numberSD, 11] = rewardCounter
+    trials[numberSD, 11] = thisTrialReward
     
 #make a function to determine and display the block feedback
 def feedback(bFB):
@@ -1144,9 +955,9 @@ def feedback(bFB):
                     "In dit blok had je een nauwkeurigheid van " + str(blockAccuracy) + "%.\n" +
                     "Je gaf een correct antwoord voor " + str(nCorrectHighRTrials) + " taken met een hoge belonging" +
                     " en " + str(nCorrectLowRTrials) + " taken met een lage belonging.\n\n" +
-                    "Druk op de spatiebalk om het volgende blok te starten.")
+                    "Druk op 'rechts' om het volgende blok te starten.")
     
-    message(message_text = feedbackText, response_key = "space")
+    message(message_text = feedbackText, response_key = "right")
 
 # determine task order 
 if participant%2 != 0:
@@ -1161,11 +972,11 @@ else:
 ### Actual experiment ##########################################
 '''
 # display the welcome message
-message(message_text = "Welkom!\n\n Druk op de spatiebalk om verder te gaan.", response_key = "space")
+message(message_text = "Welkom!\n\n Druk op 'rechts' om verder te gaan.", response_key = "right")
 
 # display introduction and practice trials
 # display general instructions
-message(message_text = TaskInstructionsStart, response_key = "space",  height = 0.075)
+instruct(image = "instructionsStart.png")
 
 if practice == "yes":
     CorRespTraining = " " #needed later
@@ -1179,12 +990,23 @@ if practice == "yes":
                             "HighDHighR", "HighDLowR", "LowDHighR", "LowDLowR", "Random"]
     stroopTrainingComplete = 0
     while stroopTrainingComplete == 0:
-    
         # display Stroop instructions
-        message(message_text = StroopInstructions, response_key = "space", height = 0.065)
+        currentStroopInstructionTrial = 0
+        while currentStroopInstructionTrial < 2:
+            if currentStroopInstructionTrial == 0:
+                stroopInstructionsRespons = instruct(image = "instructionsStroop.png")
+            elif currentStroopInstructionTrial == 1:
+                stroopInstructionsRespons = instruct(image = "instructionsStroopTrainingStart.png")
+       
+            if stroopInstructionsRespons == "left":
+                currentStroopInstructionTrial = currentStroopInstructionTrial - 1
+            elif stroopInstructionsRespons == "right":
+                currentStroopInstructionTrial = currentStroopInstructionTrial + 1
 
-        # display Stroop training instructions
-        message(message_text = StroopTrainingInstructions, response_key = "space")
+            if currentStroopInstructionTrial == -1:
+                currentStroopInstructionTrial = 0
+            elif currentStroopInstructionTrial == 2:
+                break
     
         random.shuffle(stroopTrainingArray) #shuffle array each time so it's different when participants are wrong
         accuracyStroopTraining = 0 #to determine if trial complete = 1
@@ -1202,20 +1024,20 @@ if practice == "yes":
         
             if Resp == CorResp:
                 accuracyStroopTraining = accuracyStroopTraining + 0.1
-                message(message_text = StroopTrainingCorrect, response_key = "space")
+                message(message_text = "Correct", duration = 1)
             elif Resp != CorResp:
-                message(message_text = StroopTrainingIncorrect, response_key = "space")
+                message(message_text = "Incorrect", duration = 1)
 
             # to escape loop
             if Resp == "escape":
                 break
 
         if accuracyStroopTraining >= 0.8:
-            message(message_text = StroopTrainingComplete, response_key = "space")
+            instruct(image = "instructionsStroopTrainingFinish.png")
             stroopTrainingComplete = 1
             break
         else: # display message that they have to take the training again if accuracy <0.8
-            message(message_text = StroopTrainingIncomplete, response_key = "space")
+            instruct(image = "instructionsTrainingFail.png")
     
         # to escape loop 
         if Resp == "escape":
@@ -1228,14 +1050,25 @@ if practice == "yes":
     # make an random array with every condition once plus random one
     RDKTrainingArray = ["HighDHighR", "HighDLowR", "LowDHighR", "LowDLowR", "Random",
                     "HighDHighR", "HighDLowR", "LowDHighR", "LowDLowR", "Random"]
-    RDKTrainingCompleteCheck = 0
-    while RDKTrainingCompleteCheck == 0:
-    
-        # display RDK instructions
-        message(message_text = RDKInstructions, response_key = "space", height = 0.065)
+    RDKTrainingComplete = 0
+    while RDKTrainingComplete == 0:
+        # display Stroop instructions
+        currentRDKInstructionTrial = 0
+        while currentRDKInstructionTrial < 2:
+            if currentRDKInstructionTrial == 0:
+                RDKInstructionsRespons = instruct(image = "instructionsRDK.png")
+            elif currentRDKInstructionTrial == 1:
+                RDKInstructionsRespons = instruct(image = "instructionsRDKTrainingStart.png")
+       
+            if RDKInstructionsRespons == "left":
+                currentRDKInstructionTrial = currentRDKInstructionTrial - 1
+            elif RDKInstructionsRespons == "right":
+                currentRDKInstructionTrial = currentRDKInstructionTrial + 1
 
-        # display Stroop training instructions
-        message(message_text = RDKTrainingInstructions, response_key = "space")
+            if currentRDKInstructionTrial == -1:
+                currentRDKInstructionTrial = 0
+            elif currentRDKInstructionTrial == 2:
+                break
     
         random.shuffle(RDKTrainingArray) #shuffle array each time so it's different when participants are wrong
         accuracyRDKTraining = 0 #to determine if trial complete = 1
@@ -1256,20 +1089,20 @@ if practice == "yes":
         
             if Resp == CorResp:
                 accuracyRDKTraining = accuracyRDKTraining + 0.1
-                message(message_text = RDKTrainingCorrect, response_key = "space")
+                message(message_text = "Correct", duration = 1)
             elif Resp != CorResp:
-                message(message_text = RDKTrainingIncorrect, response_key = "space")
+                message(message_text = "Incorrect", duration = 1)
 
             # to escape loop
             if Resp == "escape":
                 break
 
         if accuracyRDKTraining >= 0.8:
-            message(message_text = RDKTrainingComplete, response_key = "space")
+            instruct(image = "instructionsRDKTrainingFinish.png")
             RDKtrainingCompleteCheck = 1
             break
         else: # display message that they have to take the training again if accuracy <0.8
-            message(message_text = RDKTrainingIncomplete, response_key = "space")
+            instruct(image = "instructionsTrainingFail.png")
     
         # to escape loop 
         if Resp == "escape":
@@ -1279,18 +1112,14 @@ if practice == "yes":
     currentCueInstructionTrial = 0
     while currentCueInstructionTrial < 6:
         if currentCueInstructionTrial == 0:
-            cueInstructionsRespons = showCueAndText(message_text = CueInstructionsStart, height = 0.075, posText = (0.0, 0.0), posImage = (0.0, 0.0), image = "None")
+            cueInstructionsRespons = instruct(image = "instructionsCue1.png")
         elif currentCueInstructionTrial == 1:
-            cueInstructionsRespons = showCueAndText(message_text = CueInstructionsHighDHighR, height = 0.075, posText = (0.0, -0.25), posImage = (0.0, 0.25), image = "HighDHighR.png")
+            cueInstructionsRespons = instruct(image = "instructionsCue2.png")
         elif currentCueInstructionTrial == 2:
-            cueInstructionsRespons = showCueAndText(message_text = CueInstructionsHighDLowR, height = 0.075, posText = (0.0, -0.25), posImage = (0.0, 0.25), image = "HighDLowR.png")
+            cueInstructionsRespons = instruct(image = "instructionsCue3.png")
         elif currentCueInstructionTrial == 3:
-            cueInstructionsRespons = showCueAndText(message_text = CueInstructionsLowDHighR, height = 0.075, posText = (0.0, -0.25), posImage = (0.0, 0.25), image = "LowDHighR.png")
-        elif currentCueInstructionTrial == 4:
-            cueInstructionsRespons = showCueAndText(message_text = CueInstructionsLowDLowR, height = 0.075, posText = (0.0, -0.25), posImage = (0.0, 0.25), image = "LowDLowR.png")
-        elif currentCueInstructionTrial == 5:
-            cueInstructionsRespons = showCueAndText(message_text = CueInstructionsEnd, height = 0.075, posText = (0.0, 0.0), posImage = (0.0, 0.0), image = "None")
-    
+            cueInstructionsRespons = instruct(image = "instructionsCueTrainingStart.png")
+
         if cueInstructionsRespons == "left":
             currentCueInstructionTrial = currentCueInstructionTrial - 1
         elif cueInstructionsRespons == "right":
@@ -1328,28 +1157,30 @@ if practice == "yes":
         
             if cueInstructionsRespons == rightAnswerCueTraining:
                 accuracyCueTraining = accuracyCueTraining + 0.25
-                message(message_text = CueTrainingCorrect, response_key = "space")
+                message(message_text = "Correct", duration = 1)
             elif cueInstructionsRespons != rightAnswerCueTraining:
-                message(message_text = CueTrainingIncorrect, response_key = "space")
+                message(message_text = "Incorrect", duration = 1)
         
             # to escape loop 
             if cueInstructionsRespons == "escape":
+                cueTrainingCompleteCheck = 1
                 break
         
         if accuracyCueTraining == 1:
-            message(message_text = CueTrainingComplete, response_key = "space")
+            cueInstructionsRespons = instruct(image = "instructionsCueTrainingFinish.png")
             cueTrainingCompleteCheck = 1
             break
         else: # display message that they have to take the training again if accuracy <1
-            message(message_text = CueTrainingIncomplete, response_key = "space")
+            cueInstructionsRespons = instruct(image = "instructionsTrainingFail.png")
         
         # to escape loop 
         if cueInstructionsRespons == "escape":
+            cueTrainingCompleteCheck = 1
             break
 
-    # let them know the experiment will start for real
-    message(message_text =  "Nu zullen we starten met het experiment.\n\n" +
-                            "Druk op de spatiebalk om verder te gaan.", response_key = "space")
+# let them know the experiment will start for real
+message(message_text = "Nu zullen we starten met het experiment.\n\n" +
+                    "Druk op 'rechts' om verder te gaan.", response_key = "right")
 
 # display trials
 should_recal = True
@@ -1496,14 +1327,41 @@ for b in range(nBlocks):
 
     # display the text for the break
     if TaskType == "Stroop":
-        message(message_text = BreakTextStroop, response_key = "space")
+        message(message_text = BreakTextStroop, response_key = "right")
     elif TaskType == "RDK":
-         message(message_text = BreakTextRDK, response_key = "space")
+         message(message_text = BreakTextRDK, response_key = "right")
+
+# make a final reward float
+finalReward = float(0)
+
+# determine the final reward
+for b in range(nBlocks):
+    randomRewardNumber = random.randint(1, nTrials)
+    trialNumber = (b * nTrials) + randomRewardNumber
+    print(trialNumber)
+    print(trials[trialNumber, 11])
+    finalReward = finalReward + float(trials[trialNumber, 11])
     
+print(finalReward)
+
+# display the final reward message
+rewardText = (  "Dit is het einde van het experiment.\n\n" +
+                "Je uiteindelijke beloning is de som van " + str(nBlocks) + " willekeurige trials, één per blok.\n" +
+                "Je finale belong is € " + str(finalReward) + " .\n\n"
+                "Druk op 'rechts' om verder te gaan.")
+    
+message(message_text = rewardText, response_key = "right")
+
+# empty keys array
+keys = kb.getKeys(clear = True)
+
 # display the goodbye message
-message(message_text = "Bedankt voor je deelname! \n\n" + 
-                       "Breng de experimentator op de hoogte dat je klaar bent alsjeblieft.", duration = 1)
-###########Should not finish after 1 s but after button press that only experimenter knows or esc
+messageOnSCreen.text = goodbyeText
+messageOnSCreen.draw()
+win.flip()
+
+# wait for esc key to finish experiment
+keys = kb.waitKeys(keyList = ["escape", "tab", "w"], maxWait = 10)
 
 # close up eyetracker (transfer file)
 if ET:
@@ -1551,7 +1409,7 @@ if ET:
 df = pandas.DataFrame(trials)
 
 # rename the collums of the df
-df.columns = ['Subject', 'Gender', 'Age', 'Handedness', 'TaskType', 'Congruence', 'RewardType', 'CorResp', 'Resp', 'Accuracy', 'RT', 'TotalReward']
+df.columns = ['Subject', 'Gender', 'Age', 'Handedness', 'TaskType', 'Congruence', 'RewardType', 'CorResp', 'Resp', 'Accuracy', 'RT', 'thisTrialReward']
 
 # Check whether the specified path exists or not
 path = "ThesisDataSus"
